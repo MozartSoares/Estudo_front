@@ -4,12 +4,12 @@
     padding: 0;
 }
 header .container{
-    background-color: gray;
+    background-color: skyblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ header li {
 }
 
 header li a {
-    color: white;
+    color: black;
 }
 
 .economia_class {
@@ -31,6 +31,17 @@ header li a {
 }
 
 .esportes_class {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.cinema_class {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+.ciencia_class {
     width: 1366px;
     margin: 0 auto;
 }
@@ -70,6 +81,7 @@ margin-bottom: 8px;
 
 .articles article a:hover {
     text-decoration: underline
+    text-decoration
 }
 
 .articles article p 
@@ -86,17 +98,33 @@ section h2 {
 }
 
 #esportes {
-    background-color: rgba(0, 255, 0, 0.1)
+    background-color: slateblue
 }
 
-#esportes .articles article a{
-    background-color: rgb(87, 121, 126);
-}
-
-#economia .articles article a {
-    background-color: yellowgreen
+#esportes .articles article a {
+    background-color:skyblue
 }
 
 #economia {
-    background-color:blue;
+    background-color:slateblue
+}
+
+#economia .articles article a {
+    background-color:skyblue
+}
+
+#cinema {
+    background-color: slateblue;
+}
+
+#cinema .articles article a {
+    background-color: skyblue;
+}
+
+#ciencia {
+    background-color: slateblue;
+}
+
+#ciencia .articles article a {
+    background-color: skyblue;
 }
