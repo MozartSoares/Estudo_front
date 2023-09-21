@@ -20,13 +20,13 @@ body h3 {
 }
 
 body form,
-body form button {
+#verify {
     display:flex;
     align-items: center;
     flex-direction: column;
 }
 
-body form button {
+#verify {
     background-color: aquamarine;
     outline-color: aquamarine;
     color: black;
@@ -35,4 +35,8 @@ body form button {
     font-weight: 600px;
     width: 100px;
     margin-top: 8px;
+}
+
+#verify:hover {
+    background-color: rgba(127, 255, 212, 0.419);
 }
