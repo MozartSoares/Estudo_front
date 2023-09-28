@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c0;
+}
+
+body {
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form { 
+    margin-top: 10px;
+}
+
+form input, 
+form button{
+    padding: 8px;
+}
+
+ol li {
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ol li:hover {
+    cursor: pointer;
+}
+
+.realizado {
+    text-decoration: line-through;
+}
