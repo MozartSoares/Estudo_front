@@ -5,4 +5,6 @@ $(document).ready(function() {
     $('#cep').mask('00000-000', {
         placeholder: 'CEP:_____-___'
     })
+    $('#telefone').mask('(00) 00000-0000', {
+        placeholder: '(00) 00000-000'})
 })
