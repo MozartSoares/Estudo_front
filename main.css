@@ -36,6 +36,7 @@ header {
 .submenu li{
     position: relative;
     padding: 8px;
+    background-color: #fff;
 }
 
 .menu > li {
@@ -97,4 +98,98 @@ aside .noticia {
     grid-template-columns: repeat(3, 32.6%); /*funcao repeat está repetindo o valor 3x igual como se fosse 32.6%, 32.6%, 32.6%*/
     column-gap: 1%; /*deixamos 98% do espaço dividido para 3 itens e deixamos 1% para cada uma das duas margens definidas na prorpiedade column-gap*/
     row-gap: 5%;
+}
+
+@media screen and (max-width: 767px) { /*tamanho máximo de celular*/
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a{
+        display: block;
+        font-size: 1.5em;
+    }
+    
+    .destaque .noticia img {
+        margin-right: 0;
+    }
+    
+    .noticias {
+        display: block;
+    }
+
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        padding-left: 0;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu  {
+        position: relative;
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    
+    .submenu li{
+        position: relative;
+        padding: 8px;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+
+    .menu, .menu > li{
+        width: 100%;
+        display: block;
+    }
+    
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /*intervalo de tamanho de tablets (entre celular e netbook)*/
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 49%);/*49% + 49% e 2% de margem*/
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
 }
