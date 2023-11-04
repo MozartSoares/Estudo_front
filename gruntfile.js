@@ -4,10 +4,10 @@ module.exports = function (grunt) {
         less: {
             production: {
                 options: {
-                    compress: true,
+                    compress: false
                 },
                 files: {
-                    './build/styles/main.min.css': './src/styles/main.less'
+                    './build/styles/main.css': './src/styles/main.less'
                 }
             }
         },
@@ -22,6 +22,6 @@ module.exports = function (grunt) {
 grunt.loadNpmTasks('grunt-contrib-less');
 grunt.loadNpmTasks('grunt-contrib-uglify');
         
-grunt.registerTask('default',['less','uglify']) 
+grunt.registerTask('default',['less',]) 
 }
 
