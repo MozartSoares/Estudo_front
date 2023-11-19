@@ -1,27 +1,22 @@
-//classe de abstracao
-
-function Veiculo(nome, velocidade, uso) {
-    this.nome = nome
-    this.velocidade = velocidade
-    this.uso = uso
+class Alunos {
+    constructor(nome, nota) {
+        this.nome = nome
+        this.nota = nota
+    }
 }
 
-//classes
-function Carro(marca) {
-    this.marca = marca
-    Veiculo.call(this, "Carro", "média", "terrestre")
-}
+const joao = new Alunos ("joao",7)
+const maria = new Alunos ("maria", 8)
+const eloise = new Alunos ("eloise", 9)
+const julio = new Alunos ("julio", 6)
+const armando = new Alunos ("armando", 4)
+const cesar = new Alunos ("cesar", 0)
 
-function Aviao(companhiaAerea) {
-    this.companhiaAerea = companhiaAerea
-    Veiculo.call(this, "Avião", "alta", "aereo" )
-}
+const todosOsAlunos = []
+todosOsAlunos.push(joao, maria, eloise, julio, armando, cesar)
 
-//instancias
-const veiculo1 = new Aviao("azul")
-const veiculo2 = new Carro("toyota")
-const veiculo3 = new Carro("chevrolet")
+const alunosAprovados = todosOsAlunos.filter(function(item){
+    return item.nota >= 6
+})
 
-console.log(veiculo1)
-console.log(veiculo2)
-console.log(veiculo3)
+console.log(alunosAprovados)
